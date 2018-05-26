@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cars.component.html',
   styleUrls: ['./cars.component.css']
 })
-export class CarsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class CarsComponent {
+  canAddCar = false;
+  constructor(){
+    setTimeout(() => {
+this.canAddCar = true;
+    }, 4000)
   }
-
 }
