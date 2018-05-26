@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from "@angular/forms"; 
 
 import { AppComponent } from './app.component';
 import { My2Component } from './my2/my2.component';
@@ -14,7 +15,8 @@ import { CarComponent } from './car/car.component';
     CarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
