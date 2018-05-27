@@ -9,12 +9,16 @@ export class CarsComponent {
   
   carName = '';
   addCarStatus = false;
+  cars = ['Ford', 'Audi', 'BMW'];
+  items = [{id: 3, name: 'item1'},{id: 6, name: 'item2'},{id: 9, name: 'item3'}];
 
   constructor(){
   }
 
   addCar(){
     this.addCarStatus = true;
+    this.cars.push(this.carName);
+    this.carName = '';
   }
 
 
